@@ -155,11 +155,27 @@ Inbox[#Inbox].Data
 
 # Görev ödülünü claim et Neo.
 Send({Target = "Lz8WE41Ou1RbAiu5Ghm7_xLzVIylYM3iy8A7C6sJraY", Action = "Claim", Name = "Begin" })
-# Görev ödülünü kontrol et Neo
 Send({ Target = "Sa0iBLPNyJQrwpTTG-tWLQU-1QeUAJA73DdxGGiKoJc", Action = "Balance" })
-Inbox[#Inbox].Data 
+# Görev ödülünü kontrol et Neo
+.load-blueprint chat
+Send({ Target = CRED, Action = "Balance" })
+CRED = "Sa0iBLPNyJQrwpTTG-tWLQU-1QeUAJA73DdxGGiKoJc"
+CRED
+.load-blueprint credUtils
+CRED.balance
+
+# 50-500k arası token almışsındır Neo.
 ```
 
+<h1 align="center"> Neo, tokenlerini cüzdanına al. </h1>
+
+> Öncelikle [ArConnect](https://www.arconnect.io/) walleta ihtiyaç var.
+
+> İçine de biraz AR token lazım - Ar.io yapanlarda var zaten.
+
+> Ayarlar, Tokens, Token import
+
+> Token adresi: `Sa0iBLPNyJQrwpTTG-tWLQU-1QeUAJA73DdxGGiKoJc`
 
 
 
