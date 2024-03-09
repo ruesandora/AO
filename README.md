@@ -158,7 +158,7 @@ Send({Target = "Lz8WE41Ou1RbAiu5Ghm7_xLzVIylYM3iy8A7C6sJraY", Action = "Claim", 
 # Görev ödülünü kontrol et Neo
 Send({ Target = "Sa0iBLPNyJQrwpTTG-tWLQU-1QeUAJA73DdxGGiKoJc", Action = "Balance" })
 Inbox[#Inbox].Data 
-
+```
 
 
 
