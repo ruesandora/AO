@@ -59,10 +59,12 @@ aos
 
 ![image](https://github.com/ruesandora/AO/assets/101149671/64034e80-1798-4434-8cd5-44e9ca0bf4a3)
 
+<h1 align="center"> Morphreus görevi: Matrix'e giriş. </h1>
+
 ```console
 # Beni izle.
 
-# Görev-1 - Matrixe Mesaj Yollamayi Ogrenmek:
+# Matrixe Mesaj Yollamayi Ogrenmek:
 Morpheus = "sOQYMwbbTr5MlPwp-KUmbXgCCvfoVjgTOBuUDQJZAIU"
 # Bu komutla Morpheusu tanımlıyorsun Neo.
 
@@ -81,9 +83,18 @@ Send({ Target = Morpheus, Data = "Morpheus?" })
 
 #
 
-> Matrix seni aldı. 
+> Matrix'e devam etmeden önce [bu](https://github.com/ruesandora/AO/blob/main/chatroom.md) dosyaları ayarla Neo.
+
+<h1 align="center"> Matrix'e dönüş. </h1>
 
 ```console
+# Bu komutları gir Neo.
+.load chatroom.lua
+.load token.lua
+Morpheus = "sOQYMwbbTr5MlPwp-KUmbXgCCvfoVjgTOBuUDQJZAIU"
+Morpheus
+Send({ Target = Morpheus, Data = "Morpheus?" })
+
 # Mesajın devamını görmek için bunu kullan Neo.
 Inbox[#Inbox].Data
 # Hazır mısın?
@@ -92,10 +103,60 @@ Inbox[#Inbox].Data
 Send({ Target = Morpheus, Data = "Code: rabbithole", Action = "Unlock" })
 # let-us-test Neo. - Action fonksiyonunu kullandın.
 
+# Şimdi chat room için verdiğin isim neyse onu gir Neo. (örnk: Rues)
+# { } şeklinde çıktı alacaksın Neo.
+
+# Register et kendini Neo.
+Send({ Target = ao.id, Action = "Register" })
+# Tekrar chat Room ismini gir Neo
+# Bu sefer { } içinde process ID'ini göreceksin.
+
+# brodcast yayınla Neo.
+Send({Target = ao.id, Action = "Broadcast", Data = "Broadcasting My 1st Message" })
+```
+
+> Öncelikle Morphreus ile tanışmıştın, şimdi beni chatroom'una davet edeceksin.
+
+```console
+# Davet kodu bu Neo.
+Send({ Target = Morpheus, Action = "Join" })
+
+# şimdi Chatroom adınızı tekrar girin.
+# { } içinde hem kendi process hem de benim process ID görürsen başarılı şekilde gelmişimdir Neo.
+# Şimdi az şekerli bir Zion kahvesi yap bana Neo.
+# bu ID'leri not et bir yere Neo.
+
+# Şimdi sana söylemem gereken bir şey var Neo.
+Inbox[#Inbox].Data 
+# Evet Neo, Trinity.. Onuda alalım aramıza.
+Trinity = "K3YDqxUlQvzonUZ0itOPzAR-rPWvo2Clf9w_NRBBfds"
+Send({ Target = Trinity, Action = "Join" })
+# Chatroom adını gir bakalım Trinity proces görücek misin Neo.
+
+# Trinity sana bir görev verdi Neo..
+````
+
+<h1 align="center"> Trinty Görevi: Token oluşturma. </h1>
 
 
+```console
+# Az önce dosyalar içersinde token dosyamızı oluşturmuştuk Neo.
 
+# Şimdi Trinty'e 1000 adet token gönderelim.
+Send({ Target = ao.id, Action = "Transfer", Recipient = Trinity, Quantity = "1000"})
 
+# Trinty sana ne demiş bakalım
+Inbox[#Inbox].Data 
+# Trinty 1. Görevini tamamlamanı istiyor.
+
+# Daha önce sana dosyaları oluşturduğum için Sadec It is Done demelisin Neo.
+Send({ Target = ao.id , Action = "Broadcast", Data = "It is done" })
+
+# Görev ödülünü claim et Neo.
+Send({Target = "Lz8WE41Ou1RbAiu5Ghm7_xLzVIylYM3iy8A7C6sJraY", Action = "Claim", Name = "Begin" })
+# Görev ödülünü kontrol et Neo
+Send({ Target = "Sa0iBLPNyJQrwpTTG-tWLQU-1QeUAJA73DdxGGiKoJc", Action = "Balance" })
+Inbox[#Inbox].Data 
 
 
 
