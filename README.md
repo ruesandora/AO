@@ -178,6 +178,17 @@ CRED.balance
 > Token adresi: `Sa0iBLPNyJQrwpTTG-tWLQU-1QeUAJA73DdxGGiKoJc`
 
 
+```console
+# token adetin Neo.
+Send({ Target = "Sa0iBLPNyJQrwpTTG-tWLQU-1QeUAJA73DdxGGiKoJc", Action = "Balance" })
+
+# Düzenle Neo komutu
+Send({ Target = "Sa0iBLPNyJQrwpTTG-tWLQU-1QeUAJA73DdxGGiKoJc", Action = "Transfer", Recipient = "walletAdresin", Quantity = "Miktar"})
+```
+
+* Sonraki görevleri daha sonra yazacağım yoruldum ve vaktim kalmadı..
+
+* Ne o Neo? Beğenemedin mi? Sonra yazıcam dedim işte, hadi iyi geceler.
 
 
 
