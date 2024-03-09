@@ -90,44 +90,8 @@ Inbox[#Inbox].Data
 
 # Sana bir mesajım daha var Neo.
 Send({ Target = Morpheus, Data = "Code: rabbithole", Action = "Unlock" })
-# let us test Neo. - Action fonksiyonunu kullandın.
+# let-us-test Neo. - Action fonksiyonunu kullandın.
 
-# ctrl c ile kısa bir süreliğine Matrix den ayrıl Neo.
-
-# Şimdi Kendi evrenini yaratacaksın Neo:
-nano chatroom.lua
-# Aşağıda verdiğim komutu düzenleyip içine yapıştır Neo.
-GrupIsmin = GrupIsmin or {}
-
-Handlers.add(
-  "register",
-  Handlers.utils.hasMatchingTag("Action", "Register"),
-  function (msg)
-    table.insert(GrupIsmin, msg.From)
-    Handlers.utils.reply("registered")(msg)
-  end
-)
-
-Handlers.add(
-  "broadcast",
-  Handlers.utils.hasMatchingTag("Action", "Broadcast"),
-  function (msg)
-    for _, recipient in ipairs(GrupIsmin) do
-      ao.send({Target = recipient, Data = msg.Data})
-    end
-    Handlers.utils.reply("Broadcasted.")(msg)
-  end
-)
-# 4 Yerde GrupIsmin olacak, o kısımları düzenle ve CTRL X Y ile kaydet.
-# Matrixe geri dön Neo.
-aos
-
-# undefined yazarsa dert etme Neo.
-.load chatroom.lua
-# Düzenlemeyi unutma Neo:
-GrupIsmin = "sOQYMwbbTr5MlPwp-KUmbXgCCvfoVjgTOBuUDQJZAIU"
-GrupIsmin
-Send({ Target = ao.id, Action = "Register" })
 
 
 
