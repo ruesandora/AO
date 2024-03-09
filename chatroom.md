@@ -1,4 +1,4 @@
-# chatroom.lua dosyası oluşturma.
+# chatroom.lua hazırlık.
 
 > Oncelikle Visual Studio Code' indiriyoruz.
 
