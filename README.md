@@ -149,8 +149,9 @@ Send({ Target = ao.id, Action = "Transfer", Recipient = Trinity, Quantity = "100
 Inbox[#Inbox].Data 
 # Trinty 1. Görevini tamamlamanı istiyor.
 
-# Daha önce sana dosyaları oluşturduğum için Sadec It is Done demelisin Neo.
+# Daha önce sana dosyaları oluşturduğumuz için Kolay burası Neo.
 Send({ Target = ao.id , Action = "Broadcast", Data = "It is done" })
+Inbox[#Inbox].Data 
 
 # Görev ödülünü claim et Neo.
 Send({Target = "Lz8WE41Ou1RbAiu5Ghm7_xLzVIylYM3iy8A7C6sJraY", Action = "Claim", Name = "Begin" })
