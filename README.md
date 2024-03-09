@@ -6,6 +6,7 @@
 
 > AO ödüllü testneti sizlerle - bir kaç gün önce yaptım lakin yeni yazabiliyorum.
 
+> Topluluk kanalları: [Sohbet Kanalımız](https://t.me/RuesChat) - [Duyurular ve Gelişmeler](https://t.me/RuesAnnouncement) - [Whatsapp](https://whatsapp.com/channel/0029VaBcj7V1dAw1H2KhMk34) - [AO Discord](https://discord.gg/mSguxVuV)
 
 <h1 align="center"> Donanım </h1>
 
