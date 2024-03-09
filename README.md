@@ -164,7 +164,7 @@ CRED
 .load-blueprint credUtils
 CRED.balance
 
-# 50-500k arası token almışsındır Neo.
+# 500k token almışsındır Neo.
 ```
 
 <h1 align="center"> Neo, tokenlerini cüzdanına al. </h1>
