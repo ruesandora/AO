@@ -66,7 +66,7 @@ aos
 # Beni izle.
 
 # Matrixe Mesaj Yollamayi Ogrenmek:
-Morpheus = "sOQYMwbbTr5MlPwp-KUmbXgCCvfoVjgTOBuUDQJZAIU"
+Morpheus = "46csmSy9ei9erHcRxRELGB22hzOlvDT6FHMqisAE7M4"
 # Bu komutla Morpheusu tanımlıyorsun Neo.
 
 # Bu komutu girdiğinde
@@ -92,7 +92,7 @@ Send({ Target = Morpheus, Data = "Morpheus?" })
 # Bu komutları gir Neo.
 .load chatroom.lua
 .load token.lua
-Morpheus = "sOQYMwbbTr5MlPwp-KUmbXgCCvfoVjgTOBuUDQJZAIU"
+Morpheus = "46csmSy9ei9erHcRxRELGB22hzOlvDT6FHMqisAE7M4"
 Morpheus
 Send({ Target = Morpheus, Data = "Morpheus?" })
 
@@ -130,7 +130,7 @@ Send({ Target = Morpheus, Action = "Join" })
 # Şimdi sana söylemem gereken bir şey var Neo.
 Inbox[#Inbox].Data 
 # Evet Neo, Trinity.. Onuda alalım aramıza.
-Trinity = "K3YDqxUlQvzonUZ0itOPzAR-rPWvo2Clf9w_NRBBfds"
+
 Send({ Target = Trinity, Action = "Join" })
 # Chatroom adını gir bakalım Trinity proces görücek misin Neo.
 
@@ -154,9 +154,6 @@ Inbox[#Inbox].Data
 Send({ Target = ao.id , Action = "Broadcast", Data = "It is done" })
 Inbox[#Inbox].Data 
 
-# Görev ödülünü claim et Neo.
-Send({Target = "Lz8WE41Ou1RbAiu5Ghm7_xLzVIylYM3iy8A7C6sJraY", Action = "Claim", Name = "Begin" })
-Send({ Target = "Sa0iBLPNyJQrwpTTG-tWLQU-1QeUAJA73DdxGGiKoJc", Action = "Balance" })
 # Görev ödülünü kontrol et Neo
 .load-blueprint chat
 Send({ Target = CRED, Action = "Balance" })
@@ -165,7 +162,7 @@ CRED
 .load-blueprint credUtils
 CRED.balance
 
-# 500k token almışsındır Neo.
+# 500.000 token almışsındır Neo.
 ```
 
 <h1 align="center"> Neo, tokenlerini cüzdanına al. </h1>
@@ -184,7 +181,7 @@ CRED.balance
 Send({ Target = "Sa0iBLPNyJQrwpTTG-tWLQU-1QeUAJA73DdxGGiKoJc", Action = "Balance" })
 
 # Düzenle Neo komutu
-Send({ Target = "Sa0iBLPNyJQrwpTTG-tWLQU-1QeUAJA73DdxGGiKoJc", Action = "Transfer", Recipient = "walletAdresin", Quantity = "Miktar"})
+Send({ Target = "Sa0iBLPNyJQrwpTTG-tWLQU-1QeUAJA73DdxGGiKoJc", Action = "Transfer", Recipient = "PutYourWalletAddressHere", Quantity = "Miktar"})
 ```
 
 * Sonraki görevleri daha sonra yazacağım yoruldum ve vaktim kalmadı..
